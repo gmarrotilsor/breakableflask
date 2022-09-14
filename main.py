@@ -398,5 +398,5 @@ if __name__ == "__main__":
         sys.exit(1)
     
     #app.run(host=args.address, port=args.port)
-    app.run(host=my_addr, port=80)
+    app.run(host=my_addr, port=args.port)
 
