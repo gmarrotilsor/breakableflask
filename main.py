@@ -10,6 +10,7 @@ from Crypto.Cipher import AES
 from Crypto import Random
 import argparse
 import sys
+import ipaddress
 
 
 from flask import Flask, request, make_response, render_template_string
@@ -396,4 +397,6 @@ if __name__ == "__main__":
         print('An error ocured during database connection/setup: {}'.format(e))
         sys.exit(1)
     
-    app.run(host=args.address, port=args.port)
+    #app.run(host=args.address, port=args.port)
+    app.run(host=my_addr, port=80)
+
